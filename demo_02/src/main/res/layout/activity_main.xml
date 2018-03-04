@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@drawable/image2"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hzyc.zph.demo_02.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的爱好"
+        android:textSize="30dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="篮球"
+        android:id="@+id/lq"
+        android:onClick="check"
+        android:textSize="20dp"
+        android:layout_marginTop="81dp"
+        android:layout_below="@+id/textView"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="足球"
+        android:id="@+id/zq"
+        android:onClick="check"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/lq"
+        android:layout_alignLeft="@+id/yyq"
+        android:layout_alignStart="@+id/yyq" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="排球"
+        android:id="@+id/pq"
+        android:onClick="check"
+        android:textSize="20dp"
+        android:layout_marginTop="114dp"
+        android:layout_below="@+id/lq"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="羽毛球"
+        android:id="@+id/yyq"
+        android:onClick="check"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/pq"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="输出爱好"
+        android:id="@+id/button"
+        android:textSize="20dp"
+        android:layout_below="@+id/pq"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp" />
+</RelativeLayout>

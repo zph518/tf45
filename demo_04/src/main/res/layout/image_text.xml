@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/photo"
+        android:src="@drawable/nicefood"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ds"
+        android:id="@+id/name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignTop="@+id/photo"
+        android:layout_toRightOf="@+id/photo"
+        android:layout_toEndOf="@+id/photo" />
+
+    <RatingBar
+        style="?android:ratingBarStyleSmall"
+        android:rating="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_below="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.1"
+        android:id="@+id/price"
+        android:layout_alignBottom="@+id/photo"
+        android:layout_alignLeft="@+id/ratingBar"
+        android:layout_alignStart="@+id/ratingBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="备注"
+        android:id="@+id/bz"
+        android:layout_below="@+id/ratingBar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

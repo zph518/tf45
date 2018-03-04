@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.hzyc.zph.demo_04.Main2Activity"
+    android:background="#1a7d50"
+    android:orientation="vertical">
+
+
+    <!--第一层导航栏-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#af0505"
+        android:layout_height="55dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/topright"
+            android:id="@+id/imageView2" />
+
+        <TextView
+            android:layout_width="86dp"
+            android:layout_height="34dp"
+            android:text="一卡中国"
+            android:textSize="20dp"
+            android:id="@+id/textView2"
+            android:layout_weight="0.15" />
+
+        <EditText
+            android:layout_width="136dp"
+            android:layout_height="47dp"
+            android:id="@+id/editText2"
+            android:background="@drawable/input" />
+
+        <TextView
+            android:layout_width="68dp"
+            android:layout_height="34dp"
+            android:text="搜索"
+            android:textSize="20dp"
+            android:id="@+id/textView3" />
+    </LinearLayout>
+
+
+    <!--第二层导航栏-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#e7dcda"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="120dp"
+            android:layout_height="86dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/nicefood"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="美食"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="120dp"
+            android:layout_height="86dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/playfun"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="娱乐"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="120dp"
+            android:layout_height="86dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/service"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生活"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <!--第二层导航栏-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#e7dcda"
+        android:layout_height="91dp">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="120dp"
+            android:layout_height="86dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/buythg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购物"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="120dp"
+            android:layout_height="86dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/paymoney"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="120dp"
+            android:layout_height="86dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/newcategory"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商家"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#fcfbfb"
+        android:layout_height="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="全部"/>
+
+    </LinearLayout>
+
+
+    <!--第三层-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f6f0ef">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView4" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:id="@+id/listView" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:background="#121313"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="86dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:src="@drawable/shouye_on"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#f5f3f3"
+                    android:text="首页"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="86dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:src="@drawable/newcar"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#f5f3f3"
+                    android:text="购物车"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="86dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_menu_more_off"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#f5f3f3"
+                    android:text="更多"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

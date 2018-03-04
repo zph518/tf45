@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.hzyc.zph.demo_04.Main3Activity"
+    android:background="#1a7d50"
+    android:orientation="vertical">
+
+    <!--第一层导航栏-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#af0505"
+        android:layout_height="55dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/topright"
+            android:id="@+id/imageView2" />
+
+        <TextView
+            android:layout_width="86dp"
+            android:layout_height="34dp"
+            android:text="一卡中国"
+            android:textSize="20dp"
+            android:id="@+id/textView2"
+            android:layout_weight="0.15" />
+
+        <EditText
+            android:layout_width="136dp"
+            android:layout_height="60dp"
+            android:id="@+id/editText2"
+            android:background="@drawable/input" />
+
+        <TextView
+            android:layout_width="68dp"
+            android:layout_height="34dp"
+            android:text="搜索"
+            android:textSize="20dp"
+            android:id="@+id/textView3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#1c1a1a"
+        android:orientation="horizontal"
+        android:layout_height="52dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_gravity="center"
+            android:textColor="#eff3f1"
+
+            android:text="        筛选"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_gravity="center"
+            android:textColor="#eff3f1"
+
+            android:text="        价格"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_gravity="center"
+            android:textColor="#eff3f1"
+
+            android:text="        折扣"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#d9c2c2"
+        android:layout_height="42dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="生活服务"/>
+
+    </LinearLayout>
+
+
+    <!--第三层-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f6f0ef"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView4" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:id="@+id/listView"
+            android:layout_weight="1.00" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:background="#121313"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="86dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:src="@drawable/shouye_on"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#f5f3f3"
+                    android:text="首页"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="86dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:src="@drawable/newcar"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#f5f3f3"
+                    android:text="购物车"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="86dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_menu_more_off"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#f5f3f3"
+                    android:text="更多"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

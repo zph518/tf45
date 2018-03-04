@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hzyc.zph.demo_09.Main4Activity">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="渐变"
+        android:id="@+id/btnAlpha"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="202dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="伸缩"
+        android:id="@+id/btnScale"
+        android:layout_alignTop="@+id/btnAlpha"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="移动"
+        android:id="@+id/btnTranslate"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/btnScale"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="旋转"
+        android:id="@+id/btnRotate"
+        android:layout_alignTop="@+id/btnTranslate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button5"
+        android:layout_below="@+id/btnTranslate"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/nicefood"
+        android:layout_above="@+id/btnScale"
+        android:layout_toLeftOf="@+id/btnScale"
+        android:layout_toStartOf="@+id/btnScale"
+        android:layout_marginBottom="68dp" />
+</RelativeLayout>

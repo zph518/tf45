@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="保存"
+          android:id="@+id/save"
+          android:icon="@drawable/image1">
+    </item>
+    <item android:title="编辑"
+        android:id="@+id/update"
+        android:icon="@drawable/image2">
+    </item>
+    <item android:title="删除"
+        android:id="@+id/delete"
+        android:icon="@drawable/image3">
+    </item>
+
+</menu>
